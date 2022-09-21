@@ -26,16 +26,38 @@ namespace Ex16.ContaBancária
             NomeDoTitular = titular;
         }
         // Construtor com 3 argumento
-        public ContaBancaria(int numero, string titular, double saldo) : this(numero, titular)
+        public ContaBancaria(int numero, string titular, double depositoInicial) : this(numero, titular)
         // this para repassar o construtor de 2 argumentos.
         {
-            SaldoDaConta = saldo;
-        }
+            // REALIZAR UM DEPOSITO DO VALOR INSERIDO PELO USUÁRIO
 
+            Deposito(depositoInicial);
+
+            // Assim o método de receber um deposito realizado pelo usuário
+            // será feito pela operação da Função Deposito, assim, em caso de alteração
+            //futura desta operação, é so realizar manuntenção do deposito
+        }
+        // Propriedades customizadas -  Funções para depósito e saldo
+
+        // void = não vão retornar, apenas alterar o valor 
+        public void Deposito(double quantia)
+        {
+            SaldoDaConta += quantia;
+        }
+        public void SaqueNacional(double quantia)
+        {
+            // taxa para operações bancárias nacionais
+            SaldoDaConta -= (quantia - (quantia * 0.38));
+        }
+        public void SaqueInternacional(double quantia)
+        {
+            //taxa para operações bancárias internações
+            SaldoDaConta -= (quantia - (quantia * 6.38));
+        }
         //COMPILAR
         public override string ToString()
         {
-            return "CONTA DO USUÁRIO: " + NumeroDaConta + "NOME DO TITULAR: " + NomeDoTitular + "SALDO DISPONÍVEL R$: " + SaldoDaConta.ToString("F2", CultureInfo.InvariantCulture);
+            return "CONTA DO USUÁRIO: " + NumeroDaConta + " NOME DO TITULAR: " + NomeDoTitular + " SALDO DISPONÍVEL R$: " + SaldoDaConta.ToString("F2", CultureInfo.InvariantCulture);
         }
 
 
