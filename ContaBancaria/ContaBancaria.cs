@@ -47,12 +47,12 @@ namespace Ex16.ContaBancária
         public void SaqueNacional(double quantia)
         {
             // taxa para operações bancárias nacionais
-            SaldoDaConta -= (quantia - (quantia * 0.38));
+            SaldoDaConta = SaldoDaConta - quantia - (quantia * 0.38);
         }
         public void SaqueInternacional(double quantia)
         {
             //taxa para operações bancárias internações
-            SaldoDaConta -= (quantia - (quantia * 6.38));
+            SaldoDaConta = SaldoDaConta - quantia - (quantia * 6.38);
         }
         //COMPILAR
         public override string ToString()

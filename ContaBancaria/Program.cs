@@ -59,32 +59,46 @@ namespace Course
             if (depos=='s' || depos == 'S')
             {
                 Console.Write("Qual o valor deseja depositar R$: ");
-                double qtdDinheiro = double.Parse(Console.ReadLine(), CultureInfo.InstalledUICulture);
+                double qtdDinheiro = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
                 // Chamar a função deposito, para adionar um valor a conta
                 conta.Deposito(qtdDinheiro);
             }
             else
             {
                 Console.WriteLine("Não haverá deposito, aguarde o processamento de seus dados bancários...");
+                double qtdDinheiro = 0.0;
+                conta.Deposito(qtdDinheiro);
+
             }
             Console.WriteLine($"Dados da conta de {titular} ATUALIZADOS: ");
             Console.WriteLine(conta);
 
             // caso usuário deseje realizar um saque
             Console.WriteLine();
-            Console.WriteLine("Deseja realizar algum saque ? [S] / [N] ");
-            Console.WriteLine("Será cobrado uma taxa de 0.38%");
+            Console.WriteLine("Deseja realizar algum alguma operção ? S - saque E - Transferência exterior  ? [S] / [T] ");
+            Console.WriteLine("Se deseja encerrar a operação, tecle [F] ");
+            Console.WriteLine("Será cobrado uma taxa de 0.38% para saque nacional ou 6.38% para transferÊncia internacional");
             depos = char.Parse(Console.ReadLine());
             if (depos == 's' || depos == 'S')
             {
                 Console.Write("Qual o valor do saque R$: ");
-                double qtdDinheiro = double.Parse(Console.ReadLine(), CultureInfo.InstalledUICulture);
+                double qtdDinheiro = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 // Chamar a função deposito, para adionar um valor a conta
                 conta.SaqueNacional(qtdDinheiro);
             }
-            else
+            else if ( depos== 't' || depos == 'T')
             {
-                Console.WriteLine("Não haverá saque, aguarde o processamento de seus dados bancários...");
+                Console.Write("Qual o valor da transferência R$: ");
+                double qtdDinheiro = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                // Chamar a função deposito, para adionar um valor a conta
+                conta.SaqueInternacional(qtdDinheiro);
+            }
+            else if (depos== 'f' || depos =='F')
+            {
+                Console.WriteLine("Não haverá saque ou transferência, aguarde o processamento de ses dados bancários...");
+                double qtdDinheiro = 0.0;
+                conta.Deposito(qtdDinheiro);
             }
             Console.WriteLine($"Dados da conta de {titular} ATUALIZADOS: ");
             Console.WriteLine(conta);
