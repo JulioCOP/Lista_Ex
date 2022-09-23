@@ -24,14 +24,14 @@ namespace Course
                 // Instaciar o objeto
                 vect[i]= new Produt { Nome=nome, Preco=preco};  
                 
-                // A partir do for, é criado uma estrutura ao qual o vetor criado de acordo com valor informado, que antes tinha suas posições nulas
-                // é instanciado e o valores adicionados para nome e preço são inserido nas posições dos vetores
+                // A partir do for, é criado uma estrutura, ao qual, o vetor é criado de acordo com valor informado 
+                // é instanciado e o valores adicionados, asssim os objetos são inserido nas posições dos vetores
             }
             double soma = 0;
             for (int i = 0; i < n; i++)
             {
                 soma+= vect[i].Preco;
-                // for pecorre as posições do produtoe acessa as cassas responsáveis pelo preço, que foram adionado no comando anteriormente informado 
+                // for pecorre as posições do produtoe acessa as casas responsáveis pelo preço, que foram adionado no comando anteriormente informado 
             }
             double media = soma / n;
             Console.WriteLine($"Preço médio igual a R$: {media:F2}", CultureInfo.InvariantCulture);

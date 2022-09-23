@@ -21,10 +21,10 @@ namespace Ex._19
 
         public override string ToString()
         {
-            return "Nº QUARTO: " + Quarto + "-> " + Nome + "/ " + " Contato: " + Email;
+            return Nome + " / " + " Contato: " + Email;
         }
     }
-
+}
 
  
-}
+
