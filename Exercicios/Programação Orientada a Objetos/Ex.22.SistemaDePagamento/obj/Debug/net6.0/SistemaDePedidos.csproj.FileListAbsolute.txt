@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\bin\Debug\net6.0\SistemaDePedidos.exe
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\bin\Debug\net6.0\SistemaDePedidos.deps.json
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\bin\Debug\net6.0\SistemaDePedidos.runtimeconfig.json
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\bin\Debug\net6.0\SistemaDePedidos.dll
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\bin\Debug\net6.0\SistemaDePedidos.pdb
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\obj\Debug\net6.0\SistemaDePedidos.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\obj\Debug\net6.0\SistemaDePedidos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\obj\Debug\net6.0\SistemaDePedidos.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\obj\Debug\net6.0\SistemaDePedidos.AssemblyInfo.cs
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\obj\Debug\net6.0\SistemaDePedidos.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\obj\Debug\net6.0\SistemaDePedidos.dll
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\obj\Debug\net6.0\refint\SistemaDePedidos.dll
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\obj\Debug\net6.0\SistemaDePedidos.pdb
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\obj\Debug\net6.0\SistemaDePedidos.genruntimeconfig.cache
+C:\Users\User\Desktop\C#\Projetos\Projetos\SistemaDePedidos\SistemaDePedidos\obj\Debug\net6.0\ref\SistemaDePedidos.dll
